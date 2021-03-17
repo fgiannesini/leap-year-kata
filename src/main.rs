@@ -25,6 +25,11 @@ mod tests {
     }
 
     #[test]
+    fn should_not_be_a_leap_year_if_other_multiple_of_100() {
+        assert!(!is_leap_year(1800))
+    }
+
+    #[test]
     fn should_not_be_a_leap_year() {
         assert!(!is_leap_year(1981))
     }
