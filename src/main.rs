@@ -15,6 +15,11 @@ mod tests {
     }
 
     #[test]
+    fn should_be_an_other_leap_year() {
+        assert!(is_leap_year(1984))
+    }
+
+    #[test]
     fn should_not_be_a_leap_year() {
         assert!(!is_leap_year(1981))
     }
