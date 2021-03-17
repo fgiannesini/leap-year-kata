@@ -33,4 +33,9 @@ mod tests {
     fn should_not_be_a_leap_year() {
         assert!(!is_leap_year(1981))
     }
+
+    #[test]
+    fn should_be_a_leap_year_if_multiple_of_400() {
+        assert!(is_leap_year(2000))
+    }
 }
