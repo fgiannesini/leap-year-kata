@@ -2,7 +2,7 @@ fn main() {
 }
 
 fn is_leap_year(year: i32) -> bool {
-    year == 1980 || year == 1984
+    year %4 == 0
 }
 
 #[cfg(test)]
